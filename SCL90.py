@@ -33,11 +33,11 @@ def Count_SCL90_Responses(form):
     if idx == 1: Number_of_Quite_A_Bit_Response+= 1
     if idx == 1: Number_of_Extremely_Response+= 1
 	
-	Number_of_Not_At_All_Response = 0 
-	Number_of_A_Little_Bit_Response = 0
-  Number_of_Moderately_Response = 0
-  Number_of_Quite_A_Bit_Response = 0
-  Number_of_Extremely_Response = 0
+	Number_of_Not_At_All_Response *= Not_At_All_Response_Value  
+	Number_of_A_Little_Bit_Response *= A_Little_Bit_Response_Value
+  Number_of_Moderately_Response *= Moderately_Response_Value
+  Number_of_Quite_A_Bit_Response *= Quite_A_Bit_Response_Value
+  Number_of_Extremely_Response *= Extremely_Response_Value
 	
 	if form["Total_Yes_Response"]!= None: form["Total_Yes_Response"].EditValue = Number_of_Yes_Response
 	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
