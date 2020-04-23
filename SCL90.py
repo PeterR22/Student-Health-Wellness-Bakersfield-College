@@ -41,5 +41,13 @@ def Count_SCL90_Responses(form):
 	
 	if form["Total_Yes_Response"]!= None: form["Total_Yes_Response"].EditValue = Number_of_Yes_Response
 	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
+	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
+	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
+	
+	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
+	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
+	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
+	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
+	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Number_of_No_Response
 
 if __loadStatus == LoadStatus.Loaded: Run(__form,__changedObject,__changeType,__loadStatus)
