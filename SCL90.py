@@ -36,6 +36,7 @@ def Count_SCL90_Responses(form):
   Total_Points_Accumulated_Extremely_Response = 0
 	
 	Total_Points = 0
+	Total_Points_Overall = 0
 	
   
 	for i in range(1,91):
@@ -69,4 +70,5 @@ def Count_SCL90_Responses(form):
 	if form["Total_Points_Accumulated_Extremely_Response"]!= None: form["Total_Points_Accumulated_Extremely_Response"].EditValue = Points_Accumulated_Extremely_Response
 	
 	if form["Total_Points_Overall"]!= None: form["Total_Points_Overall"].EditValue = Total_Points
+		
 if __loadStatus == LoadStatus.Loaded: Run(__form,__changedObject,__changeType,__loadStatus)
