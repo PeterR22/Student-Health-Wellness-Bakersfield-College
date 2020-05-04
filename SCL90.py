@@ -27,7 +27,15 @@ def Count_SCL90_Responses(form):
 	Points_Accumulated_A_Little_Bit_Response = 0 
   Points_Accumulated_Moderately_Response = 0
   Points_Accumulated_Quite_A_Bit_Response = 0 
-  Points_Accumulated_Extremely_Response = 0 
+  Points_Accumulated_Extremely_Response = 0
+	
+	Total_Points_Accumulated_Not_At_All_Response = 0   
+	Total_Points_Accumulated_A_Little_Bit_Response = 0 
+  Total_Points_Accumulated_Moderately_Response = 0
+  Total_Points_Accumulated_Quite_A_Bit_Response = 0 
+  Total_Points_Accumulated_Extremely_Response = 0
+	
+	Total_Points = 0
 	
   
 	for i in range(1,91):
@@ -46,16 +54,19 @@ def Count_SCL90_Responses(form):
   Points_Accumulated_Quite_A_Bit_Response = Number_of_Quite_A_Bit_Response*Quite_A_Bit_Response_Value
   Points_Accumulated_Extremely_Response = Number_of_Extremely_Response*Extremely_Response_Value
 	
+	Total_Points = Points_Accumulated_Not_At_All_Response+Points_Accumulated_A_Little_Bit_Response+Points_Accumulated_Moderately_Response+Points_Accumulated_Quite_A_Bit_Response+Points_Accumulated_Extremely_Response
+	
 	if form["Total_Number_of_Not_At_All_Response"]!= None: form["Total_Number_of_Not_At_All_Response"].EditValue = Number_of_Not_At_All_Response
 	if form["Total_Number_of_A_Little_Bit_Response"]!= None: form["Total_Number_of_A_Little_Bit_Response"].EditValue = Number_of_A_Little_Bit_Response
 	if form["Total_Number_of_Moderately_Response"]!= None: form["Total_Number_of_Moderately_Response"].EditValue = Number_of_Moderately_Response
 	if form["Total_Number_of_Quite_A_Bit_Response"]!= None: form["Total_Number_of_Quite_A_Bit_Response"].EditValue = Number_of_Quite_A_Bit_Response
 	if form["Total_Number_of_Extremely_Response"]!= None: form["Total_Number_of_Extremely_Response"].EditValue = Number_of_Extremely_Response	
 	
-	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Points_Accumulated_Not_At_All_Response
-	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Points_Accumulated_A_Little_Bit_Response
-	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Points_Accumulated_Moderately_Response
-	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Points_Accumulated_Quite_A_Bit_Response
-	if form["Total_No_Response"]!= None: form["Total_No_Response"].EditValue = Points_Accumulated_Extremely_Response
-
+	if form["Total_Points_Accumulated_Not_At_All_Response"]!= None: form["Total_Points_Accumulated_Not_At_All_Response"].EditValue = Points_Accumulated_Not_At_All_Response
+	if form["Total_Points_Accumulated_A_Little_Bit_Response"]!= None: form["Total_Points_Accumulated_A_Little_Bit_Response"].EditValue = Points_Accumulated_A_Little_Bit_Response
+	if form["Total_Points_Accumulated_Moderately_Response"]!= None: form["Total_Points_Accumulated_Moderately_Response"].EditValue = Points_Accumulated_Moderately_Response
+	if form["Total_Points_Accumulated_Quite_A_Bit_Response"]!= None: form["Total_Points_Accumulated_Quite_A_Bit_Response"].EditValue = Points_Accumulated_Quite_A_Bit_Response
+	if form["Total_Points_Accumulated_Extremely_Response"]!= None: form["Total_Points_Accumulated_Extremely_Response"].EditValue = Points_Accumulated_Extremely_Response
+	
+	if form["Total_Points_Overall"]!= None: form["Total_Points_Overall"].EditValue = Total_Points
 if __loadStatus == LoadStatus.Loaded: Run(__form,__changedObject,__changeType,__loadStatus)
