@@ -61,3 +61,14 @@ def ProcessMessage():
 		outVars.Payload = msg
 
 ProcessMessage()
+
+#Email Body
+<p><font color="red">First Time Portal Clients:</font><br>
+Please take a few moments and register to access your NEW BC Student Health & Wellness Portal<br>
+https://bakersfield.studenthealthportal.com/Registration/Register<br>
+<font color="red">University ID = BC Student ID number (ex:@00xxxxxx)<br>Email must be your College assigned email.</font>
+<br>
+<br>
+Once access is granted, please visit My Forms to complete your Personal Health Information Updates.
+<br>
+
