@@ -15,7 +15,7 @@ from System.Text import *
  
 EMAIL_FROM = "noreply@bakersfield.studenthealthportal.com"
 EMAIL_FROM_NAME = "Student Health Center"
-EMAIL_SUBJECT = "NEW Student Health and Wellness Portal"
+EMAIL_SUBJECT = "Appointment Notice: Forms Reminder"
 IS_HTML = True
 
 def BuildEMail():
