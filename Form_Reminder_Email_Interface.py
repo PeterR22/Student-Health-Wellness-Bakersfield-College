@@ -15,7 +15,7 @@ from System.Text import *
  
 EMAIL_FROM = "noreply@bakersfield.studenthealthportal.com"
 EMAIL_FROM_NAME = "Student Health Center"
-EMAIL_SUBJECT = "Appointment Notice: Forms Reminder"
+EMAIL_SUBJECT = "Appointment Forms Reminder"
 IS_HTML = True
 
 def BuildEMail():
@@ -63,12 +63,5 @@ def ProcessMessage():
 ProcessMessage()
 
 #Email Body
-<p><font color="red">First Time Portal Clients:</font><br>
-Please take a few moments and register to access your NEW BC Student Health & Wellness Portal<br>
-https://bakersfield.studenthealthportal.com/Registration/Register<br>
-<font color="red">University ID = BC Student ID number (ex:@00xxxxxx)<br>Email must be your College assigned email.</font>
-<br>
-<br>
-Once access is granted, please visit My Forms to complete your Personal Health Information Updates.
-<br>
-
+<p>Dear [PATIENT_FIRSTNAME] [PATIENT_LASTNAME],</p><p>You have an appointment on [APPT_DATE] at [APPT_TIME][PROVIDER_NAME].</p><p>Please make sure that all appointment forms related to your appointment have been completed prior to your appoinment time. This will help Student Health and Wellness Services provide you with the best service our facility is capable of.<br><br>
+If you have already completed all forms related to your appointment, please disregard this email. We thank you for your cooperation!<br><br>Sincerely, <br>Student Health and Wellness Services</p>
