@@ -5,6 +5,10 @@
 #-------------             are totaled to assist mental health providers in their methodology 
 #-------------             for assessing/diagnosing their clients. 
 
+#---- Variable Name Characters Exceed Name Object in System. List below details variable name changes.
+#----
+#----
+
 def Run(form,changedObject,changeType,loadStatus):
 	if changedObject.Name == None : return
 	if changedObject.Name.StartsWith("q"):
