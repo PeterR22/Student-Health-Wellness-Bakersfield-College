@@ -66,11 +66,11 @@ def Count_SCL90_Responses(form):
 		if form["Total_Number_of_Quite_A_Bit_Response"]!= None: form["Total_Number_of_Quite_A_Bit_Response"].EditValue = Number_of_Quite_A_Bit_Response
 		if form["Total_Number_of_Extremely_Response"]!= None: form["Total_Number_of_Extremely_Response"].EditValue = Number_of_Extremely_Response	
 	
-		if form["Total_Points_Accumulated_Not_At_All_Response"]!= None: form["Total_Points_Accumulated_Not_At_All_Response"].EditValue = Points_Accumulated_Not_At_All_Response
-		if form["Total_Points_Accumulated_A_Little_Bit_Response"]!= None: form["Total_Points_Accumulated_A_Little_Bit_Response"].EditValue = Points_Accumulated_A_Little_Bit_Response
-		if form["Total_Points_Accumulated_Moderately_Response"]!= None: form["Total_Points_Accumulated_Moderately_Response"].EditValue = Points_Accumulated_Moderately_Response
-		if form["Total_Points_Accumulated_Quite_A_Bit_Response"]!= None: form["Total_Points_Accumulated_Quite_A_Bit_Response"].EditValue = Points_Accumulated_Quite_A_Bit_Response
-		if form["Total_Points_Accumulated_Extremely_Response"]!= None: form["Total_Points_Accumulated_Extremely_Response"].EditValue = Points_Accumulated_Extremely_Response
+		if form["Total_Points_Accumulated_Not_At_All_Re"]!= None: form["Total_Points_Accumulated_Not_At_All_Re"].EditValue = Points_Accumulated_Not_At_All_Response
+		if form["Total_Points_Accumulated_A_Little_Bit_Re"]!= None: form["Total_Points_Accumulated_A_Little_Bit_Re"].EditValue = Points_Accumulated_A_Little_Bit_Response
+		if form["Total_Points_Accumulated_Moderately_Re"]!= None: form["Total_Points_Accumulated_Moderately_Re"].EditValue = Points_Accumulated_Moderately_Response
+		if form["Total_Points_Accumulated_Quite_A_Bit_Re"]!= None: form["Total_Points_Accumulated_Quite_A_Bit_Re"].EditValue = Points_Accumulated_Quite_A_Bit_Response
+		if form["Total_Points_Accumulated_Extremely_Re"]!= None: form["Total_Points_Accumulated_Extremely_Re"].EditValue = Points_Accumulated_Extremely_Response
 	
 		if form["Total_Points_Overall"]!= None: form["Total_Points_Overall"].EditValue = Total_Points
 		
