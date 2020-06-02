@@ -2,6 +2,8 @@
 #-------------Date: 05/28/2019 
 #-------------Information: This script is for provider use when assessing 
 #-------------             patients for the Danger Assessment. 
+
+#------ Pending Score Rubric Response from LMFT R.H
 from MediaHighway.Common.BLL.Forms import *
 
 def Run(form,changedObject,changeType,loadStatus):
